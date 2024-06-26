@@ -1,0 +1,89 @@
+/* NavBar.css */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 50px;
+    /* Adjust height as needed */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    /* Hide by default */
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        /* Show hamburger menu */
+        cursor: pointer;
+    }
+
+    .nav-list {
+        display: none;
+        /* Hide nav links on small screens */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-list.active {
+        display: flex;
+        /* Show nav links when active */
+    }
+
+    .nav-list li {
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-list a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}

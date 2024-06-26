@@ -1,0 +1,98 @@
+.aboutus-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+#about h2,
+#tours h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border-bottom: 2px solid #ff6347;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#about p,
+#tours p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+#tours ul {
+    list-style: none;
+    padding: 0;
+}
+
+#tours ul li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    padding-left: 1.2rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+#tours ul li::before {
+    content: "•";
+    color: #ff6347;
+    position: absolute;
+    left: 0;
+}
+
+.about-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.about-images img {
+    flex: 1 1 calc(33.333% - 1rem);
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+
+    main.aboutUsSection {
+        padding-top: 90px;
+        /* so that the navbar doesnt cover screens content */
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    #about h2,
+    #tours h2 {
+        font-size: 1.5rem;
+    }
+
+    #about p,
+    #tours p,
+    #tours ul li {
+        font-size: 1rem;
+    }
+
+    .about-images img {
+        flex: 1 1 100%;
+    }
+}

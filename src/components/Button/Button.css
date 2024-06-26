@@ -1,4 +1,7 @@
-button {
+/* Button.css */
+
+.button,
+.button-link {
     cursor: pointer;
     background-color: #ff6347;
     color: white;
@@ -13,9 +16,18 @@ button {
     /* Add shadow for better visibility */
 }
 
-button:hover {
+.button:hover,
+.button-link:hover {
     background-color: #ff4500;
     transform: translateY(-2px);
     border: 2px solid #ff4500;
     /* Change border color on hover */
+}
+
+/* Additional styles specific to Link */
+.button-link {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
 }
