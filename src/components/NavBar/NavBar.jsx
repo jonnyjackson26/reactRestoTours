@@ -18,7 +18,7 @@ const NavBar = () => {
                         <li><Link to="/about-us" className="nav-link">About Us</Link></li>
                         <li><Link to="/testimonials" className="nav-link">Testimonials</Link></li>
                         <li><Link to="/contact" className="nav-link">Contact</Link></li>
-                        <li><Link to="/our-tours" className="nav-link">Our Tours</Link></li>
+                        <li><Link to="/tours" className="nav-link">Our Tours</Link></li>
                         <li><Link to="/faq" className="nav-link">FAQ</Link></li>
 
                         {/* Uncomment and modify as needed for dropdown menu */}
