@@ -11,7 +11,9 @@ const Tours = () => {
                 <h1>Ours Tours</h1>
 
                 <section className="faq-section"> {/*need to change*/}
-                    <TourButton name="Tour 1" date="aug 1" imageUrl='src/assets/temple.jpg' linkTo='/'></TourButton>
+                    <TourButton name="Tour of Kirtland, Ohio" date="September 24-28, 2024" imageUrl='src/assets/temple.jpg' linkTo='tour1'></TourButton>
+                    <TourButton name="Tour of Kirtland, Ohio" date="October 8-12, 2024" imageUrl='src/assets/temple.jpg' linkTo='tour2'></TourButton>
+                    <TourButton name="Tour of Kirtland, Ohio" date="October 15-19, 2024" imageUrl='src/assets/temple.jpg' linkTo='tour3'></TourButton>
                 </section>
 
             </main>

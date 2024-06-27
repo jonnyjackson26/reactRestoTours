@@ -7,7 +7,8 @@ import Testimonials from './pages/testimonials/Testimonials';
 import Contact from './pages/contact/Contact';
 import FAQ from './pages/faq/Faq';
 import Tours from './pages/tours/Tours';
-//import NavBar from './components/NavBar'
+import tour1 from './assets/tourInfoFiles/tourInfo';
+import TourInfo from './pages/tourInfo/TourInfo';
 
 
 
@@ -37,7 +38,20 @@ const router = createHashRouter([
     path: "/tours",
     element: <Tours />,
   },
+  {
+    path: "tours/tour1",
+    element: <TourInfo agenda={tour1.agenda} />,
+  },
+  {
+    path: "tours/tour2",
+    element: <TourInfo agenda={tour1.agenda} />, //obv need to change
+  },
+  {
+    path: "tours/tour3",
+    element: <TourInfo agenda={tour1.agenda} />,
+  },
 ])
+
 
 export const Context = React.createContext();
 
