@@ -20,6 +20,7 @@ const NavBar = () => {
                         <li><Link to="/contact" className="nav-link">Contact</Link></li>
                         <li><Link to="/tours" className="nav-link">Our Tours</Link></li>
                         <li><Link to="/faq" className="nav-link">FAQ</Link></li>
+                        <li><Link to="/register" className="nav-link">Register</Link></li>
 
                         {/* Uncomment and modify as needed for dropdown menu */}
                         {/* <li className="dropdown">

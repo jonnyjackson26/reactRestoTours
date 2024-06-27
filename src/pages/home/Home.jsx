@@ -25,9 +25,10 @@ const Home = () => {
                         <Button text="Call" onClick={call}></Button>
                         <Button text="Learn More About Tours" to='/about-us' />
                     </div>
-
                 </div>
             </main>
+
+
         </>
     );
 };

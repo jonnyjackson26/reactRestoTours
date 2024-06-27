@@ -1,0 +1,27 @@
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height: 100vh;
+    /* Adjust height as needed */
+    background-color: #f4f7f6;
+    /* Optional background color */
+}
+
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    /* Adjust max-width as needed */
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.form-container iframe {
+    width: 100%;
+    height: 800px;
+    /* Adjust height as needed */
+    border: none;
+}

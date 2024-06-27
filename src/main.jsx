@@ -9,6 +9,7 @@ import FAQ from './pages/faq/Faq';
 import Tours from './pages/tours/Tours';
 import tour1 from './assets/tourInfoFiles/tourInfo';
 import TourInfo from './pages/tourInfo/TourInfo';
+import Register from './pages/register/Register';
 
 
 
@@ -49,6 +50,10 @@ const router = createHashRouter([
   {
     path: "tours/tour3",
     element: <TourInfo agenda={tour1.agenda} />,
+  },
+  {
+    path: "/register",
+    element: <Register />,
   },
 ])
 
