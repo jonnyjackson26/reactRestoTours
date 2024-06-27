@@ -53,13 +53,14 @@
 .about-images {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
     margin-top: 1.5rem;
 }
 
 .about-images img {
     flex: 1 1 calc(33.333% - 1rem);
-    max-width: 100%;
+    max-width: 400px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;

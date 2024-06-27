@@ -72,3 +72,34 @@ body {
     gap: 1rem;
     margin-top: 2rem;
 }
+
+
+
+
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+
+    /* can get rid of a lot of things here, except for font-size */
+    .hero h1 {
+        color: white;
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero p {
+        font-size: .8rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        font-size: .7rem;
+    }
+
+}

@@ -4,6 +4,10 @@ header {
     background-color: #333;
     color: white;
     padding: 10px 0;
+    position: relative;
+    /* Add relative positioning */
+    z-index: 10;
+    /* Ensure header is above the nav-list */
 }
 
 .container {
@@ -30,35 +34,13 @@ nav {
     /* Hide by default */
 }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-        /* Show hamburger menu */
-        cursor: pointer;
-    }
-
-    .nav-list {
-        display: none;
-        /* Hide nav links on small screens */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        padding: 10px 0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    .nav-list.active {
-        display: flex;
-        /* Show nav links when active */
-    }
-
-    .nav-list li {
-        margin-right: 0;
-        text-align: center;
-    }
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
 }
 
 .nav-list {
@@ -81,9 +63,46 @@ nav {
     text-decoration: none;
     padding: 10px 15px;
     display: block;
+    transition: color 0.3s ease;
+    /* Add transition for color */
 }
 
 .nav-list a:hover {
     background-color: #555;
     border-radius: 5px;
+    color: #ff6347;
+    /* Change text color on hover */
+}
+
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        /* Show hamburger menu */
+        cursor: pointer;
+    }
+
+    .nav-list {
+        display: none;
+        /* Hide nav links on small screens */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        /* Position below the header */
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-list.active {
+        display: flex;
+        /* Show nav links when active */
+    }
+
+    .nav-list li {
+        margin-right: 0;
+        text-align: center;
+    }
 }
