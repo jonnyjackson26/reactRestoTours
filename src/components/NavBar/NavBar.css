@@ -21,7 +21,6 @@ header {
 
 .logo {
     height: 50px;
-    /* Adjust height as needed */
 }
 
 nav {
@@ -104,5 +103,9 @@ nav {
     .nav-list li {
         margin-right: 0;
         text-align: center;
+    }
+
+    .logo {
+        height: 30px;
     }
 }

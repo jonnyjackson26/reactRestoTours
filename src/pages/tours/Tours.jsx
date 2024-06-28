@@ -11,9 +11,9 @@ const Tours = () => {
                 <h1>Ours Tours</h1>
 
                 <section className="tours">
-                    <TourButton name="Tour of Kirtland, Ohio" date="September 24-28, 2024" imageUrl='src/assets/temple-painting.jpg' linkTo='tour1'></TourButton>
-                    <TourButton name="Tour of Kirtland, Ohio" date="October 8-12, 2024" imageUrl='src/assets/temple-painting.jpg' linkTo='tour2'></TourButton>
-                    <TourButton name="Tour of Kirtland, Ohio" date="October 15-19, 2024" imageUrl='src/assets/temple-painting.jpg' linkTo='tour3'></TourButton>
+                    <TourButton name="Tour of Kirtland, Ohio" date="September 24-28, 2024" imageUrl='assets/temple-painting.jpg' linkTo='tour1'></TourButton>
+                    <TourButton name="Tour of Kirtland, Ohio" date="October 8-12, 2024" imageUrl='assets/temple-painting.jpg' linkTo='tour2'></TourButton>
+                    <TourButton name="Tour of Kirtland, Ohio" date="October 15-19, 2024" imageUrl='assets/temple-painting.jpg' linkTo='tour3'></TourButton>
                 </section>
 
             </main>

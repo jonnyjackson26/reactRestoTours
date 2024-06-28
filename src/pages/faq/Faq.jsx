@@ -8,7 +8,7 @@ const FAQ = () => {
             <NavBar />
             <main className="faq">
                 <h1>Frequently Asked Questions</h1>
-
+                <br />
                 <section className="faq-section">
                     <h2>What is included on the trip:</h2>
                     <ul>

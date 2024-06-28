@@ -24,7 +24,7 @@ const tour1 = {
             date: "Day Two - Wednesday September 25th",
             html: `<div class="agenda-day">
                   <h3>Day Two - Wednesday September 25th</h3>
-                  <img src="assets/toursInfoPics/sawmill.jpg" alt="Sawmill"
+                  <img src="/src/assets/toursInfoPics/sawmill.jpg" alt="Sawmill"
                               class="agenda-image">
                   <p>Today we will load the motor coach and off we go! We will begin with a grand overview of Kirtland. We
                       will answer these questions (and many more!) What brought the prophet to Kirtland? Why Kirtland? And
@@ -46,7 +46,7 @@ const tour1 = {
             date: "Day Three - Thursday September 26th",
             html: `<div class="agenda-day">
                   <h3>Day Three - Thursday September 26th</h3>
-                  <img src="assets/toursInfoPics/1830-bom.jpg" alt="1830 Book of Mormon"
+                  <img src="/src/assets/toursInfoPics/1830-bom.jpg" alt="1830 Book of Mormon"
                               class="agenda-image">
                   <p>On Thursday we will visit the site of the Orange conference and learn about the witnesses to the Book
                       of Mormon. We will learn about the Saints who came to Kirtland from Orange. For lunch, we will visit
@@ -64,7 +64,7 @@ const tour1 = {
             date: "Day Four - Friday September 27th",
             html: `<div class="agenda-day">
                   <h3>Day Four - Friday September 27th</h3>
-                  <img src="assets/toursInfoPics/morley-farm-fam.png" alt="Morley Farm"
+                  <img src="/src/assets/toursInfoPics/morley-farm-fam.png" alt="Morley Farm"
                               class="agenda-image">
                   <p>We have a GREAT day today! We will travel to the Community of Christ chapel in Kirtland where we will
                       be taught by the local Community of Christ pastor Nancy Cervi about their beliefs, and their
@@ -90,7 +90,7 @@ const tour1 = {
             date: "Day Five - Saturday September 28th",
             html: `<div class="agenda-day">
                   <h3>Day Five - Saturday September 28th</h3>
-                  <img src="assets/toursInfoPics/temple.jpg" alt="Kirtland Temple" class="agenda-image">
+                  <img src="/src/assets/toursInfoPics/temple.jpg" alt="Kirtland Temple" class="agenda-image">
                   <p>As we wind down our tour, we will save the best for last! We will tour the Kirtland Temple, we will
                       learn about some faithful saints who are buried in the Kirtland Temple cemetery and then we will
                       learn about the prophecies that were made about Kirtland post 1838, including the transfer of

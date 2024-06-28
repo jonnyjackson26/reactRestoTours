@@ -60,7 +60,8 @@
 
 .about-images img {
     flex: 1 1 calc(33.333% - 1rem);
-    max-width: 400px;
+    width: 90%;
+    max-width: 300px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -72,11 +73,6 @@
 
 /* Mobile-friendly styles */
 @media (max-width: 768px) {
-
-    main.aboutUsSection {
-        padding-top: 90px;
-        /* so that the navbar doesnt cover screens content */
-    }
 
     .container {
         padding: 1rem;

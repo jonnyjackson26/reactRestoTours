@@ -13,7 +13,7 @@ const NavBar = () => {
         <header>
             <div className="container">
                 <Link to="/" className="logo-link">
-                    <img className='logo' src="/src/assets/logo.png" alt="Logo" />
+                    <img className='logo' src="assets/logo.png" alt="Logo" />
                 </Link>
 
                 <nav>

@@ -25,9 +25,9 @@ const About = () => {
                         Community of Christ during the transfer of stewardship of the Kirtland Temple. He has a deep love for
                         Community of Christ, the other faith groups in the city, and all things Kirtland.</p>
                     <div className="about-images">
-                        <img src="/src/assets/about-us/morley.jpg" alt="Tour at Morley Farm" />
-                        <img src="/src/assets/about-us/temple.jpg" alt="Tour Group in front of Kirtland Temple" />
-                        <img src="/src/assets/about-us/5k.jpg" alt="Joe with Nashville Tribute Band and Hank Smith" />
+                        <img src="assets/about-us/morley.jpg" alt="Tour at Morley Farm" />
+                        <img src="assets/about-us/temple.jpg" alt="Tour Group in front of Kirtland Temple" />
+                        <img src="assets/about-us/5k.jpg" alt="Joe with Nashville Tribute Band and Hank Smith" />
                     </div>
                 </section>
 
