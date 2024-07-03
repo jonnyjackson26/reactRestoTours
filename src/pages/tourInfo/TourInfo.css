@@ -101,6 +101,10 @@ main.tour-info h1 {
     /* Gap between the content and the button */
 }
 
+.content ul {
+    padding-left: 40px;
+}
+
 .button-div {
     display: flex;
     align-items: center;

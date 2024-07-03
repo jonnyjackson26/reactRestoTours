@@ -13,8 +13,14 @@ const TourInfo = ({ agenda }) => {
 
                 <div className="tourInfoContainer">
                     <div className="content">
-                        <p><strong>Tour Price: $1,350</strong></p>
-                        <p>All lodging, meals (except 3), and transit are included in the price. Airfare not included.</p>
+                        <p><strong>Tour Price</strong></p>
+                        <p>Pricing includes lodging, all transport, all tour expenses, (with the exception of 3 meals). Pricing does not include airfare.</p>
+                        <ul>
+                            <li>$1050 per person based on double occupancy – Cash/Check/Zelle/Venmo Price</li>
+                            <li>$1100 per person if paying by debit/credit card (double occupancy)</li>
+                            <li>$1,250 for single occupancy Cash/Check/Zelle/Venmo Price</li>
+                            <li>$1,300 single occupancy rate (credit card price)</li>
+                        </ul>
                     </div>
                     <div className="button-div">
                         <Button text="Register" to="/register" />
