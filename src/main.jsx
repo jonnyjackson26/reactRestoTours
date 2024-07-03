@@ -14,10 +14,7 @@ import TourInfo from './pages/tourInfo/TourInfo';
 import Register from './pages/register/Register';
 
 import emailjs from 'emailjs-com';
-emailjs.init({
-  publicKey: "RvRZJ8_KLtjGvgQgy",
-});
-//emailjs.init('user_RvRZJ8_KLtjGvgQgy');
+emailjs.init('RvRZJ8_KLtjGvgQgy');
 
 
 const router = createHashRouter([

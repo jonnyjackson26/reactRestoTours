@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-//npm install emailjs-com
 import './Contact.css';
 import NavBar from '../../components/NavBar/NavBar';
 
@@ -14,13 +13,13 @@ const Contact = () => {
 
         // Construct params object for EmailJS
         const params = {
-            name,
-            email,
-            message
+            from_name: name,    // Ensure this matches with your EmailJS template parameter
+            from_email: email,  // Ensure this matches with your EmailJS template parameter
+            message: message    // Ensure this matches with your EmailJS template parameter
         };
 
         // Example of how to use params with EmailJS
-        emailjs.send('service_ouyapun', 'template_0iq1h1n', params, 'user_RvRZJ8_KLtjGvgQgy')
+        emailjs.send('service_ouyapun', 'template_0iq1h1n', params)
             .then((response) => {
                 console.log('Email sent!', response);
                 alert('Your message has been sent successfully!');
