@@ -19,7 +19,7 @@ body {
 
 
 .hero {
-    background-image: url('assets/temple.jpg');
+    background-image: url('/assets/temple.jpg');
     /* Replace with your image path */
     background-size: cover;
     background-position: center;
@@ -83,7 +83,7 @@ body {
 
     /* switch to vertical image of temple*/
     .hero {
-        background-image: url('assets/temple-vertical.jpg');
+        background-image: url('/assets/temple-vertical.jpg');
         /* text towards top */
         align-items: flex-start;
     }

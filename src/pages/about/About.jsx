@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../../components/NavBar/NavBar';
 import './About.css'
+import Button from '../../components/Button/Button';
 
 const About = () => {
     return (
@@ -16,7 +17,7 @@ const About = () => {
                         after
                         excavation, would later be rebuilt by the church along with the Sawmill that was owned by Joel Hills
                         Johnson
-                        (also in his backyard!). This discovery led to the rebuilding of the Historic Kirtland village in 2003.
+                        (also in his backyard!). This discovery, and other events, led to the rebuilding of the Historic Kirtland village in 2003.
                     </p>
                     <p>During his time in Kirtland, he has been deeply committed to uniting the church with city leaders, other
                         faith leaders, and community members. In recent years, Joe has been involved in the restoration of the
@@ -29,18 +30,12 @@ const About = () => {
                         <img src="assets/about-us/temple.jpg" alt="Tour Group in front of Kirtland Temple" />
                         <img src="assets/about-us/5k.jpg" alt="Joe with Nashville Tribute Band and Hank Smith" />
                     </div>
+                    <div className="button-div">
+                        <Button text="Our Tours" to="/tours" />
+                        <Button text="Register" to="/register" />
+                    </div>
                 </section>
 
-                <section id="tours" className="aboutus-container">
-                    <h2>Our Tours</h2>
-                    <p>We offer guided tours of historic church sites in Kirtland, including:</p>
-                    <ul>
-                        <li>Kirtland Temple</li>
-                        <li>Historic Kirtland Village</li>
-                        <li>Joseph & Emma Smith Home</li>
-                        <li>And many more...</li>
-                    </ul>
-                </section>
             </main>
         </>
     );

@@ -7,7 +7,9 @@ import Testimonials from './pages/testimonials/Testimonials';
 import Contact from './pages/contact/Contact';
 import FAQ from './pages/faq/Faq';
 import Tours from './pages/tours/Tours';
-import tour1 from './assets/tourInfoFiles/tourInfo';
+import { tour1 } from './assets/tourInfoFiles/tourInfo';
+import { tour2 } from './assets/tourInfoFiles/tourInfo';
+import { tour3 } from './assets/tourInfoFiles/tourInfo';
 import TourInfo from './pages/tourInfo/TourInfo';
 import Register from './pages/register/Register';
 
@@ -49,11 +51,11 @@ const router = createHashRouter([
   },
   {
     path: "tours/tour2",
-    element: <TourInfo agenda={tour1.agenda} />, //obv need to change
+    element: <TourInfo agenda={tour2.agenda} />,
   },
   {
     path: "tours/tour3",
-    element: <TourInfo agenda={tour1.agenda} />,
+    element: <TourInfo agenda={tour3.agenda} />,
   },
   {
     path: "/register",
