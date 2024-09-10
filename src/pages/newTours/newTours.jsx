@@ -1,5 +1,5 @@
-// ToursTable.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './newTours.css'; // Import the CSS file for styling
 
 const toursData = [
@@ -61,6 +61,58 @@ const toursData = [
   },
 ];
 
+const colorPalettes = {
+    "The Kirtland Experience": [
+      "#003f5c", // Dark Blue
+      "#2f4b7c", // Medium Blue
+      "#665191", // Slate Blue
+      "#a05195", // Light Purple Blue
+      "#d45087"  // Pinkish Blue
+    ],
+    "Doctrine Restored": [
+      "#004d00", // Dark Green
+      "#007a33", // Medium Green
+      "#4caf50", // Light Green
+      "#81c784", // Pale Green
+      "#a5d6a7"  // Very Light Green
+    ],
+    "Birthplace of a Prophet, a Church, and the Restoration of Keys": [
+      "#8e6f41", // Dark Beige
+      "#a28d6b", // Medium Beige
+      "#c4a59b", // Light Beige
+      "#d8cfc4", // Very Light Beige
+      "#f5f3f0"  // Off-White
+    ],
+    "Deacons & Dads": [
+      "#5c4033", // Dark Brown
+      "#7d5a43", // Medium Brown
+      "#a07b6d", // Light Brown
+      "#c3a398", // Pale Brown
+      "#e0d4c0"  // Very Light Brown
+    ],
+    "City of Joseph": [
+      "#7d3f3f", // Dark Maroon
+      "#a64d4d", // Medium Maroon
+      "#c77c7c", // Light Maroon
+      "#e4a5a5", // Pale Maroon
+      "#f5d6d6"  // Very Light Maroon
+    ],
+    "Life of the Prophet Joseph": [
+      "#4a148c", // Dark Purple
+      "#6a1b9a", // Medium Purple
+      "#9c27b0", // Light Purple
+      "#ce93d8", // Pale Purple
+      "#f3e5f5"  // Very Light Purple
+    ],
+    "On the Shores of Lake Erie": [
+      "#01579b", // Dark Blue
+      "#0288d1", // Medium Blue
+      "#03a9f4", // Light Blue
+      "#67daff", // Pale Blue
+      "#b3e5fc"  // Very Light Blue
+    ]
+  };
+
 const ToursTable = () => {
   return (
     <div className="tours-table-container">
@@ -80,16 +132,19 @@ const ToursTable = () => {
           </tr>
         </thead>
         <tbody>
-          {toursData.map((tour, index) => (
-            <tr key={index} className={`row-${index}`}>
-              <td className="title-cell">{tour.title}</td>
-              <td>{tour.location}</td>
-              <td>{tour.dates}</td>
-              <td>{tour.daysOnTour}</td>
-              <td>{tour.cost}</td>
-              <td>{tour.activityLevel}</td>
-            </tr>
-          ))}
+          {toursData.map((tour, index) => {
+            const path = `/${tour.title.toLowerCase().replace(/\s+/g, '-')}`;
+            return (
+              <tr key={index} className={`row-${index}`} style={{ cursor: 'pointer' }}>
+                <td><Link to={path}>{tour.title}</Link></td>
+                <td><Link to={path}>{tour.location}</Link></td>
+                <td><Link to={path}>{tour.dates}</Link></td>
+                <td><Link to={path}>{tour.daysOnTour}</Link></td>
+                <td><Link to={path}>{tour.cost}</Link></td>
+                <td><Link to={path}>{tour.activityLevel}</Link></td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

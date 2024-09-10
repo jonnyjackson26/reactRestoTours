@@ -1,102 +1,133 @@
-/* General container styling */
+/* newTours.css */
+
 .tours-table-container {
     padding: 20px;
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9; /* Light gray background for the container */
   }
   
-  /* Heading styling */
   .tours-heading {
     font-size: 2em;
-    color: #4e342e; /* Earthy brown color */
+    color: #333;
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Georgia', serif;
   }
   
-  /* Description styling */
   .tours-description {
     margin-bottom: 20px;
     font-size: 1.1em;
-    color: #6d4c41; /* Slightly darker brown */
-    text-align: center; /* Center align description */
+    color: #555;
   }
   
-  /* Table styling */
   .tours-table {
     width: 100%;
     border-collapse: collapse;
   }
   
-  /* Table header styling */
-  .tours-table th {
-    background-color: #8d6e63; /* Warm brown */
-    color: white;
-    padding: 12px;
-    text-align: center; /* Center align header text */
-  }
-  
-  /* Table cell styling */
-  .tours-table th, .tours-table td {
-    border: 1px solid #d7ccc8; /* Light brown border */
+  .tours-table th,
+  .tours-table td {
+    border: 1px solid #ddd;
     padding: 10px;
-    text-align: center; /* Center align cell text */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions for hover */
   }
   
-  /* Colorful row backgrounds with transparency */
-  .tours-table tr:nth-child(odd) {
-    background-color: rgba(189, 183, 107, 0.3); /* Light khaki with transparency for odd rows */
-  }
-  
-  .tours-table tr:nth-child(even) {
-    background-color: rgba(160, 82, 45, 0.3); /* Light sienna with transparency for even rows */
-  }
-  
-  /* Specific row colors */
-  .tours-table tr:nth-child(1) {
-    background-color: rgba(139, 69, 19, 0.7); /* Dark brown with transparency */
+  .tours-table th {
+    background-color: #007BFF; /* Blue */
     color: white;
+  }
+  
+  .tours-table td {
+    color: #333; /* Default text color for non-first column cells */
+  }
+  
+  .tours-table tr:nth-child(1) {
+    background-color: #003f5c; /* Dark Blue */
   }
   
   .tours-table tr:nth-child(2) {
-    background-color: rgba(205, 133, 63, 0.7); /* Peru with transparency */
-    color: white;
+    background-color: #004d00; /* Dark Green */
   }
   
   .tours-table tr:nth-child(3) {
-    background-color: rgba(160, 82, 45, 0.7); /* Sienna with transparency */
-    color: white;
+    background-color: #8e6f41; /* Dark Beige */
   }
   
   .tours-table tr:nth-child(4) {
-    background-color: rgba(139, 69, 19, 0.7); /* Dark brown with transparency */
-    color: white;
+    background-color: #5c4033; /* Dark Brown */
   }
   
   .tours-table tr:nth-child(5) {
-    background-color: rgba(188, 143, 143, 0.7); /* Rosy brown with transparency */
-    color: white;
+    background-color: #7d3f3f; /* Dark Maroon */
   }
   
   .tours-table tr:nth-child(6) {
-    background-color: rgba(210, 180, 140, 0.7); /* Tan with transparency */
-    color: white;
+    background-color: #4a148c; /* Dark Purple */
   }
   
   .tours-table tr:nth-child(7) {
-    background-color: rgba(107, 142, 35, 0.7); /* Olive drab with transparency */
-    color: white;
+    background-color: #01579b; /* Dark Blue */
   }
   
-  /* Hover effect */
-  .tours-table tr:hover {
-    background-color: rgba(160, 82, 45, 0.5); /* Slightly darker sienna for hover with transparency */
+  .tours-table td a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 1.5;
   }
   
-  /* Title cell styling */
-  .title-cell {
-    color: white;
-    font-weight: bold;
-    text-align: center; /* Center text in the title cell */
+  .tours-table tr {
+    transition: transform 0.3s; /* Smooth scaling effect */
+  }
+  
+  .tours-table tr:nth-child(1):hover:not(:first-child),
+  .tours-table tr:nth-child(2):hover:not(:first-child),
+  .tours-table tr:nth-child(3):hover:not(:first-child),
+  .tours-table tr:nth-child(4):hover:not(:first-child),
+  .tours-table tr:nth-child(5):hover:not(:first-child),
+  .tours-table tr:nth-child(6):hover:not(:first-child),
+  .tours-table tr:nth-child(7):hover:not(:first-child) {
+    background-color: #004d6b; /* Example lighter shade */
+    transform: scale(1.02); /* Slightly scales up the row */
+  }
+  
+  .tours-table tr:nth-child(1):hover:not(:first-child) {
+    background-color: #004d6b; /* Lighter shade of Dark Blue */
+  }
+  
+  .tours-table tr:nth-child(2):hover:not(:first-child) {
+    background-color: #006d00; /* Lighter shade of Dark Green */
+  }
+  
+  .tours-table tr:nth-child(3):hover:not(:first-child) {
+    background-color: #a68f6d; /* Lighter shade of Dark Beige */
+  }
+  
+  .tours-table tr:nth-child(4):hover:not(:first-child) {
+    background-color: #7a5a43; /* Lighter shade of Dark Brown */
+  }
+  
+  .tours-table tr:nth-child(5):hover:not(:first-child) {
+    background-color: #a64d4d; /* Lighter shade of Dark Maroon */
+  }
+  
+  .tours-table tr:nth-child(6):hover:not(:first-child) {
+    background-color: #6a1b9a; /* Lighter shade of Dark Purple */
+  }
+  
+  .tours-table tr:nth-child(7):hover:not(:first-child) {
+    background-color: #0277bd; /* Lighter shade of Dark Blue */
+  }
+  
+  .tours-table td {
+    background-color: rgba(255, 255, 255, 0.5); /* Half transparent white */
+  }
+  
+  .tours-table td:first-child {
+    background-color: transparent; /* Full opacity for the first column */
+    color: white; /* Text color for the first column */
+    font-weight: bold; /* Bold text for the first column */
   }
   
