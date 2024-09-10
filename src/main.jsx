@@ -13,6 +13,8 @@ import { tour3 } from './assets/tourInfoFiles/tourInfo';
 import TourInfo from './pages/tourInfo/TourInfo';
 import Register from './pages/register/Register';
 
+import ToursTable from './pages/newTours/newTours';
+
 import emailjs from 'emailjs-com';
 emailjs.init('RvRZJ8_KLtjGvgQgy');
 
@@ -57,6 +59,10 @@ const router = createHashRouter([
   {
     path: "/register",
     element: <Register />,
+  },
+  {
+    path: "/new-tours",
+    element: <ToursTable />,
   },
 ])
 
