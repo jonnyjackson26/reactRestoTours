@@ -1,0 +1,57 @@
+/* LakeErieExperienceTable.css */
+
+.table-container {
+    width: 100%;
+    margin: 20px auto;
+    overflow-x: auto;
+  }
+  
+  .experience-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  .experience-table th, .experience-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .category-header {
+    background-color: #5c3c74;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+  }
+  
+  .experience-header {
+    background-color: #9c5e88;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+  }
+  
+  .experience-date {
+    background-color: #e98976;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .category-cell {
+    background-color: #ffe9d5;
+    font-weight: bold;
+    color: #5c3c74;
+  }
+  
+  .experience-cell {
+    background-color: #f7a790;
+    color: white;
+  }
+  
+  .experience-table td:hover {
+    background-color: #fdd5c4;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  

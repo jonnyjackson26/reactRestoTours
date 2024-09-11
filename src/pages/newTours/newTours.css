@@ -91,6 +91,7 @@
   .tours-table tr:nth-child(7):hover:not(:first-child) {
     background-color: #004d6b; /* Example lighter shade */
     transform: scale(1.02); /* Slightly scales up the row */
+    border-radius: 50px; /* i dont think this works but i want it toooooooooooooooooooooooooooooooo*/
   }
   
   .tours-table tr:nth-child(1):hover:not(:first-child) {

@@ -16,6 +16,9 @@ import Register from './pages/register/Register';
 import ToursTable from './pages/newTours/newTours';
 
 import emailjs from 'emailjs-com';
+import TheKirtlandExperience from './pages/tours2/the-kirtland-experience/The-Kirtland-Experience';
+import LandsOfTheRestoration from './pages/tours2/Lands-Of-The-Restoration/Lands-Of-The-Restoration';
+import OnTheShores from './pages/tours2/on-the-shores/On-The-Shores';
 emailjs.init('RvRZJ8_KLtjGvgQgy');
 
 
@@ -63,6 +66,18 @@ const router = createHashRouter([
   {
     path: "/new-tours",
     element: <ToursTable />,
+  },
+  {
+    path: "/the-kirtland-experience",
+    element: <TheKirtlandExperience />,
+  },
+  {
+    path: "/lands-of-the-restoration",
+    element: <LandsOfTheRestoration />,
+  },
+  {
+    path: "/on-the-shores",
+    element: <OnTheShores />,
   },
 ])
 

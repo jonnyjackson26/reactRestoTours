@@ -1,0 +1,58 @@
+/* KirtlandExperienceTable.css */
+
+.table-container {
+    width: 100%;
+    margin: 20px auto;
+    overflow-x: auto;
+  }
+  
+  .experience-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .experience-table th, .experience-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .header-cell {
+    background-color: #003f5c;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .category-cell {
+    background-color: #ffebc8;
+    font-weight: bold;
+  }
+  
+  .experience-cell {
+    background-color: #a05195;
+    color: white;
+  }
+  
+  .experience-cell:nth-child(2) {
+    background-color: #d45087;
+  }
+  
+  .experience-cell:nth-child(3) {
+    background-color: #665191;
+  }
+  
+  .experience-cell:nth-child(4) {
+    background-color: #2f4b7c;
+  }
+  
+  /* Add hover effects to make the table interactive */
+  .experience-table td:hover {
+    background-color: #f3f3f3;
+    cursor: pointer;
+  }
+  
+  .experience-table td {
+    transition: all 0.2s ease-in-out;
+  }
+  

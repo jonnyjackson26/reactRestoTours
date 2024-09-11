@@ -20,7 +20,7 @@ const toursData = [
     activityLevel: "About 1 mile a day walking",
   },
   {
-    title: "Birthplace of a Prophet, a Church, and the Restoration of Keys",
+    title: "Lands Of The Restoration",
     location: "Vermont, New York, Pennsylvania, Ohio",
     dates: "September 16-22",
     daysOnTour: 7,
@@ -76,7 +76,7 @@ const colorPalettes = {
       "#81c784", // Pale Green
       "#a5d6a7"  // Very Light Green
     ],
-    "Birthplace of a Prophet, a Church, and the Restoration of Keys": [
+    "Lands Of The Restoration": [
       "#8e6f41", // Dark Beige
       "#a28d6b", // Medium Beige
       "#c4a59b", // Light Beige
@@ -113,6 +113,17 @@ const colorPalettes = {
     ]
   };
 
+  const namesAndPaths = {
+    "On the Shores of Lake Erie": "/on-the-shores",
+    "Life of the Prophet Joseph": "/life-of-the-prophet-joseph",
+    "City of Joseph": "/city-of-joseph",
+    "Deacons & Dads": "/deacons-and-dads",
+    "Lands of the Restoration": "/lands-of-the-restoration",
+    "Doctrine Restored": "/doctrine-restored",
+    "The Kirtland Experience": "/the-kirtland-experience"
+  };
+
+
 const ToursTable = () => {
   return (
     <div className="tours-table-container">
@@ -133,15 +144,14 @@ const ToursTable = () => {
         </thead>
         <tbody>
           {toursData.map((tour, index) => {
-            const path = `/${tour.title.toLowerCase().replace(/\s+/g, '-')}`;
             return (
               <tr key={index} className={`row-${index}`} style={{ cursor: 'pointer' }}>
-                <td><Link to={path}>{tour.title}</Link></td>
-                <td><Link to={path}>{tour.location}</Link></td>
-                <td><Link to={path}>{tour.dates}</Link></td>
-                <td><Link to={path}>{tour.daysOnTour}</Link></td>
-                <td><Link to={path}>{tour.cost}</Link></td>
-                <td><Link to={path}>{tour.activityLevel}</Link></td>
+                <td><Link to={namesAndPaths[tour.title]}>{tour.title}</Link></td>
+                <td><Link to={namesAndPaths[tour.title]}>{tour.location}</Link></td>
+                <td><Link to={namesAndPaths[tour.title]}>{tour.dates}</Link></td>
+                <td><Link to={namesAndPaths[tour.title]}>{tour.daysOnTour}</Link></td>
+                <td><Link to={namesAndPaths[tour.title]}>{tour.cost}</Link></td>
+                <td><Link to={namesAndPaths[tour.title]}>{tour.activityLevel}</Link></td>
               </tr>
             );
           })}
