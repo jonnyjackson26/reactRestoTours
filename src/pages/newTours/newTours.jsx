@@ -11,6 +11,7 @@ const toursData = [
     daysOnTour: 5,
     cost: "$1150-$1350",
     activityLevel: "About 1 mile a day walking",
+    imageUrl: "/assets/temple-painting.jpg",
   },
   {
     title: "Doctrine Restored",
@@ -19,6 +20,7 @@ const toursData = [
     daysOnTour: 7,
     cost: "$1650-$1950",
     activityLevel: "About 1 mile a day walking",
+    imageUrl: "/assets/temple-painting.jpg",
   },
   {
     title: "Lands Of The Restoration",
@@ -27,6 +29,7 @@ const toursData = [
     daysOnTour: 7,
     cost: "$1700",
     activityLevel: "About 1 mile a day walking",
+    imageUrl: "/assets/temple-painting.jpg",
   },
   {
     title: "Deacons & Dads",
@@ -35,6 +38,7 @@ const toursData = [
     daysOnTour: 7,
     cost: "$1500",
     activityLevel: "About 2 miles a day walking",
+    imageUrl: "/assets/temple-painting.jpg",
   },
   {
     title: "City of Joseph",
@@ -43,6 +47,7 @@ const toursData = [
     daysOnTour: 5,
     cost: "$1350",
     activityLevel: "About 2 miles a day walking",
+    imageUrl: "/assets/temple-painting.jpg",
   },
   {
     title: "Life of the Prophet Joseph",
@@ -51,6 +56,7 @@ const toursData = [
     daysOnTour: 12,
     cost: "$3150",
     activityLevel: "About 1-2 miles a day walking",
+    imageUrl: "/assets/temple-painting.jpg",
   },
   {
     title: "On the Shores of Lake Erie",
@@ -59,6 +65,7 @@ const toursData = [
     daysOnTour: 8,
     cost: "$1800",
     activityLevel: "About 2 miles a day walking",
+    imageUrl: "/assets/temple-painting.jpg",
   },
 ];
 
@@ -95,12 +102,17 @@ const ToursTable = () => {
           <tbody>
             {toursData.map((tour, index) => (
               <tr key={index} className={`tour-row row-${index}`}>
-                <td><Link to={namesAndPaths[tour.title]}>{tour.title}</Link></td>
-                <td>{tour.location}</td>
-                <td>{tour.dates}</td>
-                <td>{tour.daysOnTour}</td>
-                <td>{tour.cost}</td>
-                <td>{tour.activityLevel}</td>
+                <td className="tour-title">
+                  <Link to={namesAndPaths[tour.title]}>{tour.title}</Link>
+                </td>
+                <td className="tour-image">
+                  <img src={tour.imageUrl} alt={tour.title} />
+                </td>
+                <td data-label="Locations">{tour.location}</td>
+                <td data-label="2025 Dates">{tour.dates}</td>
+                <td data-label="Days">{tour.daysOnTour}</td>
+                <td data-label="Cost">{tour.cost}</td>
+                <td data-label="Activity">{tour.activityLevel}</td>
               </tr>
             ))}
           </tbody>
