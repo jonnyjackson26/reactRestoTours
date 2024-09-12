@@ -10,7 +10,6 @@ import Tours from './pages/tours/Tours';
 import { tour1 } from './assets/tourInfoFiles/tourInfo';
 import { tour2 } from './assets/tourInfoFiles/tourInfo';
 import { tour3 } from './assets/tourInfoFiles/tourInfo';
-import TourInfo from './pages/tourInfo/TourInfo';
 import Register from './pages/register/Register';
 
 import ToursTable from './pages/newTours/newTours';
@@ -45,27 +44,11 @@ const router = createHashRouter([
   },
   {
     path: "/tours",
-    element: <Tours />,
-  },
-  {
-    path: "tours/tour1",
-    element: <TourInfo agenda={tour1.agenda} />,
-  },
-  {
-    path: "tours/tour2",
-    element: <TourInfo agenda={tour2.agenda} />,
-  },
-  {
-    path: "tours/tour3",
-    element: <TourInfo agenda={tour3.agenda} />,
+    element: <ToursTable />,
   },
   {
     path: "/register",
     element: <Register />,
-  },
-  {
-    path: "/new-tours",
-    element: <ToursTable />,
   },
   {
     path: "/the-kirtland-experience",

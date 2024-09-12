@@ -1,134 +1,166 @@
 /* newTours.css */
 
 .tours-table-container {
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .tours-heading {
-    font-size: 2em;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Georgia', serif;
-  }
-  
-  .tours-description {
-    margin-bottom: 20px;
-    font-size: 1.1em;
-    color: #555;
-  }
-  
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Heading and Description Styling */
+.tours-heading {
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Merriweather', serif; /* A good-looking font for titles */
+}
+
+.tours-description {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #555;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif; /* Clean font for body text */
+}
+
+/* Table Styling */
+.tours-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tours-table th,
+.tours-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Header styling */
+.tours-table th {
+  background-color: #007BFF;
+  color: white;
+  padding: 15px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+/* Cell background colors */
+.tour-row.row-0 {
+  background-color: #b3cde0; /* Light Blue */
+}
+
+.tour-row.row-1 {
+  background-color: #c5e1a5; /* Light Green */
+}
+
+.tour-row.row-2 {
+  background-color: #d5a6bd; /* Light Pink */
+}
+
+.tour-row.row-3 {
+  background-color: #d7b2a2; /* Light Brown */
+}
+
+.tour-row.row-4 {
+  background-color: #e1a9a0; /* Light Coral */
+}
+
+.tour-row.row-5 {
+  background-color: #b39ddb; /* Light Purple */
+}
+
+.tour-row.row-6 {
+  background-color: #4fc3f7; /* Light Blue */
+}
+
+/* Hover Effect */
+.tours-table tr {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.tours-table tr:hover {
+  transform: scale(1.02);
+}
+
+.tour-row.row-0:hover {
+  background-color: #b7dbec; /* Lighter Blue */
+}
+
+.tour-row.row-1:hover {
+  background-color: #e1f5a5; /* Lighter Green */
+}
+
+.tour-row.row-2:hover {
+  background-color: #f2b9c3; /* Lighter Pink */
+}
+
+.tour-row.row-3:hover {
+  background-color: #f4d2c1; /* Lighter Brown */
+}
+
+.tour-row.row-4:hover {
+  background-color: #f4c0bc; /* Lighter Coral */
+}
+
+.tour-row.row-5:hover {
+  background-color: #d5a6f4; /* Lighter Purple */
+}
+
+.tour-row.row-6:hover {
+  background-color: #81d4f4; /* Lighter Blue */
+}
+
+
+/* Link styling */
+.tours-table td a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
   .tours-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .tours-table th,
-  .tours-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center; /* Center text */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions for hover */
-  }
-  
-  .tours-table th {
-    background-color: #007BFF; /* Blue */
-    color: white;
-  }
-  
-  .tours-table td {
-    color: #333; /* Default text color for non-first column cells */
-  }
-  
-  .tours-table tr:nth-child(1) {
-    background-color: #003f5c; /* Dark Blue */
-  }
-  
-  .tours-table tr:nth-child(2) {
-    background-color: #004d00; /* Dark Green */
-  }
-  
-  .tours-table tr:nth-child(3) {
-    background-color: #8e6f41; /* Dark Beige */
-  }
-  
-  .tours-table tr:nth-child(4) {
-    background-color: #5c4033; /* Dark Brown */
-  }
-  
-  .tours-table tr:nth-child(5) {
-    background-color: #7d3f3f; /* Dark Maroon */
-  }
-  
-  .tours-table tr:nth-child(6) {
-    background-color: #4a148c; /* Dark Purple */
-  }
-  
-  .tours-table tr:nth-child(7) {
-    background-color: #01579b; /* Dark Blue */
-  }
-  
-  .tours-table td a {
-    color: #fff;
-    text-decoration: none;
     display: block;
-    height: 100%;
     width: 100%;
-    line-height: 1.5;
   }
-  
+
+  .tours-table thead {
+    display: none;
+  }
+
   .tours-table tr {
-    transition: transform 0.3s; /* Smooth scaling effect */
+    display: block;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
-  
-  .tours-table tr:nth-child(1):hover:not(:first-child),
-  .tours-table tr:nth-child(2):hover:not(:first-child),
-  .tours-table tr:nth-child(3):hover:not(:first-child),
-  .tours-table tr:nth-child(4):hover:not(:first-child),
-  .tours-table tr:nth-child(5):hover:not(:first-child),
-  .tours-table tr:nth-child(6):hover:not(:first-child),
-  .tours-table tr:nth-child(7):hover:not(:first-child) {
-    background-color: #004d6b; /* Example lighter shade */
-    transform: scale(1.02); /* Slightly scales up the row */
-    border-radius: 50px; /* i dont think this works but i want it toooooooooooooooooooooooooooooooo*/
-  }
-  
-  .tours-table tr:nth-child(1):hover:not(:first-child) {
-    background-color: #004d6b; /* Lighter shade of Dark Blue */
-  }
-  
-  .tours-table tr:nth-child(2):hover:not(:first-child) {
-    background-color: #006d00; /* Lighter shade of Dark Green */
-  }
-  
-  .tours-table tr:nth-child(3):hover:not(:first-child) {
-    background-color: #a68f6d; /* Lighter shade of Dark Beige */
-  }
-  
-  .tours-table tr:nth-child(4):hover:not(:first-child) {
-    background-color: #7a5a43; /* Lighter shade of Dark Brown */
-  }
-  
-  .tours-table tr:nth-child(5):hover:not(:first-child) {
-    background-color: #a64d4d; /* Lighter shade of Dark Maroon */
-  }
-  
-  .tours-table tr:nth-child(6):hover:not(:first-child) {
-    background-color: #6a1b9a; /* Lighter shade of Dark Purple */
-  }
-  
-  .tours-table tr:nth-child(7):hover:not(:first-child) {
-    background-color: #0277bd; /* Lighter shade of Dark Blue */
-  }
-  
+
   .tours-table td {
-    background-color: rgba(255, 255, 255, 0.5); /* Half transparent white */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
   }
-  
-  .tours-table td:first-child {
-    background-color: transparent; /* Full opacity for the first column */
-    color: white; /* Text color for the first column */
-    font-weight: bold; /* Bold text for the first column */
+
+  .tours-table td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #007BFF;
+    padding-right: 10px;
   }
-  
+
+  /* Last row doesn't need bottom border */
+  .tours-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* Padding adjustments for better look */
+  .tours-table-container {
+    padding: 10px 15px;
+  }
+}
