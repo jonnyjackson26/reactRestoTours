@@ -73,6 +73,19 @@ nav {
     /* Change text color on hover */
 }
 
+@keyframes hoverAnimation {
+    0% {
+        background-color: transparent;
+        color: white;
+    }
+    100% {
+        background-color: #555;
+        color: #ff6347;
+    }
+}
+
+
+
 /* Mobile-friendly styles */
 @media (max-width: 768px) {
     .menu-toggle {

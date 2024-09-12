@@ -40,7 +40,7 @@ const Contact = () => {
                 <h1>Contact Us</h1>
                 <section className="contact-info">
                     <p>Email: <a href="mailto:restorationtourgroup@gmail.com">restorationtourgroup@gmail.com</a></p>
-                    <p>Phone: <a href="tel:4407961642">440-796-1642</a></p>
+                    <p>Phone: <a href="tel:4407961642">801-717-2980</a></p>
                 </section>
                 <section className="contact-form">
                     <form onSubmit={handleSubmit}>
